@@ -8,10 +8,9 @@ on:
         required: false
         type: string
 
-  # GitHub cron is UTC. 07:00 UTC is 09:00 in Sweden during summer time
-  # and 08:00 during winter time.
+  # GitHub cron is UTC. 05:00 UTC is 07:00 in Sweden during summer time.
   schedule:
-    - cron: "0 7 * * *"
+    - cron: "0 5 * * *"
 
 jobs:
   collect:
@@ -22,10 +21,10 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
@@ -53,7 +52,7 @@ jobs:
           echo "output_file=$OUTPUT_FILE" >> "$GITHUB_OUTPUT"
 
       - name: Upload CSV artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: debate_articles_${{ steps.run_collector.outputs.run_date }}
           path: ${{ steps.run_collector.outputs.output_file }}
