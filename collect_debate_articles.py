@@ -39,6 +39,7 @@ class Site:
     include_prefixes: tuple[str, ...]
     exclude_fragments: tuple[str, ...] = ()
     require_section_terms: tuple[str, ...] = ()
+    require_link_terms: tuple[str, ...] = ()
 
 
 SITES: tuple[Site, ...] = (
@@ -54,6 +55,13 @@ SITES: tuple[Site, ...] = (
             "/opinion/heidi-avellan/",
         ),
         require_section_terms=("aktuella frågor", "debatt"),
+    ),
+    Site(
+        name="Altinget Debatt",
+        section_url="https://www.altinget.se/debatt",
+        include_prefixes=("/artikel/",),
+        require_section_terms=("debatt",),
+        require_link_terms=("debatt",),
     ),
     Site(
         name="GP Debatt",
@@ -107,6 +115,7 @@ ROLE_WORDS = (
     "förbundsordförande",
     "förbundssekreterare",
     "finansregionråd",
+    "generaldirektör",
     "generalsekreterare",
     "grundare",
     "gruppledare",
@@ -129,6 +138,7 @@ ROLE_WORDS = (
     "talesperson",
     "visiting",
     "vd",
+    "överdirektör",
 )
 ROLE_RE = re.compile(r"\b(?:" + "|".join(map(re.escape, ROLE_WORDS)) + r")\b", re.I)
 WORD = r"[^\W\d_][^\W\d_'’.-]*"
@@ -140,6 +150,20 @@ NAME_BEFORE_ROLE_RE = re.compile(
     + r")\b",
     re.I,
 )
+SWEDISH_MONTH_NUMBERS = {
+    "januari": 1,
+    "februari": 2,
+    "mars": 3,
+    "april": 4,
+    "maj": 5,
+    "juni": 6,
+    "juli": 7,
+    "augusti": 8,
+    "september": 9,
+    "oktober": 10,
+    "november": 11,
+    "december": 12,
+}
 
 
 def fetch(url: str, timeout: int = 25) -> str:
@@ -258,8 +282,17 @@ def extract_article_links(section_document: str, site: Site) -> list[str]:
     base_host = urlparse(base).netloc.removeprefix("www.")
     section_path = urlparse(base).path.rstrip("/")
     links: list[str] = []
-    for match in re.finditer(r"""href\s*=\s*["']([^"']+)["']""", section_document, flags=re.I):
-        href = html.unescape(match.group(1))
+    for match in re.finditer(r"(?is)<a\b([^>]*)>(.*?)</a>", section_document):
+        attrs = parse_attrs(match.group(1))
+        href = attrs.get("href", "")
+        if not href:
+            continue
+        link_text = normalize_space(re.sub(r"(?is)<[^>]+>", " ", match.group(2)))
+        if site.require_link_terms and not any(
+            re.search(rf"\b{re.escape(term)}\b", link_text, flags=re.I)
+            for term in site.require_link_terms
+        ):
+            continue
         url = urljoin(base, href).split("#", 1)[0].split("?", 1)[0]
         parsed = urlparse(url)
         host = parsed.netloc.removeprefix("www.")
@@ -283,6 +316,25 @@ def parse_published_at(value: str, target_tz: ZoneInfo) -> datetime | None:
     value = normalize_space(value)
     if not value:
         return None
+    swedish_date = re.search(
+        r"\b(\d{1,2})\s+([A-Za-zÅÄÖåäö]+)\s+(\d{4})"
+        r"(?:\s+kl\.?\s+(\d{1,2})[:.](\d{2}))?\b",
+        value,
+        flags=re.I,
+    )
+    if swedish_date:
+        month = SWEDISH_MONTH_NUMBERS.get(swedish_date.group(2).lower())
+        if month:
+            hour = int(swedish_date.group(4) or 0)
+            minute = int(swedish_date.group(5) or 0)
+            return datetime(
+                int(swedish_date.group(3)),
+                month,
+                int(swedish_date.group(1)),
+                hour,
+                minute,
+                tzinfo=target_tz,
+            )
     if re.fullmatch(r"\d{12,}", value):
         return datetime.fromtimestamp(int(value) / 1000, tz=target_tz)
     if re.fullmatch(r"\d{9,11}", value):
@@ -300,6 +352,7 @@ def parse_published_at(value: str, target_tz: ZoneInfo) -> datetime | None:
 def get_published_at(
     article: dict[str, Any],
     metadata: dict[str, list[str]],
+    document: str,
     target_tz: ZoneInfo,
 ) -> datetime | None:
     candidates: list[str] = []
@@ -317,6 +370,10 @@ def get_published_at(
         candidates.extend(metadata.get(key, []))
     for value in candidates:
         parsed = parse_published_at(value, target_tz)
+        if parsed:
+            return parsed
+    for block in extract_text_blocks(document)[:80]:
+        parsed = parse_published_at(block, target_tz)
         if parsed:
             return parsed
     return None
@@ -346,7 +403,11 @@ def collection_window(
 
 def clean_title(value: str) -> str:
     value = normalize_space(value)
-    value = re.sub(r"\s+[–|-]\s+(?:DN|SvD|Sydsvenskan|Aftonbladet|Expressen|GP|Di).*$", "", value)
+    value = re.sub(
+        r"\s+[–|-]\s+(?:Altinget|DN|SvD|Sydsvenskan|Aftonbladet|Expressen|GP|Di).*$",
+        "",
+        value,
+    )
     return value
 
 
@@ -384,7 +445,7 @@ def extract_text_blocks(document: str) -> list[str]:
     )
     blocks: list[str] = []
     for match in re.finditer(
-        r"(?is)<(h1|h2|h3|p|figcaption|span|div)[^>]*>(.*?)</\1>",
+        r"(?is)<(h1|h2|h3|h4|h5|p|figcaption|span|div)[^>]*>(.*?)</\1>",
         clean,
     ):
         raw = re.sub(r"(?is)<[^>]+>", " ", match.group(2))
@@ -490,6 +551,7 @@ def is_generic_author(name: str) -> bool:
     lowered = name.lower()
     generic = (
         "aftonbladet",
+        "altinget",
         "dagens industri",
         "dagens nyheter",
         "debatt",
@@ -788,6 +850,39 @@ def extract_author_detail_lines(blocks: list[str]) -> list[str]:
     return displays
 
 
+def is_person_name_only(text: str) -> str:
+    text = clean_author_text(text)
+    if len(text) > 80:
+        return ""
+    names = extract_person_names(text)
+    if len(names) != 1:
+        return ""
+    return names[0] if names[0] == text else ""
+
+
+def extract_adjacent_author_detail_lines(blocks: list[str]) -> list[str]:
+    displays: list[str] = []
+    seen: dict[str, int] = {}
+    relevant_blocks = blocks[:60]
+    for index, block in enumerate(relevant_blocks[:-1]):
+        lowered = block.lower()
+        if "detta är en opinionsartikel" in lowered or "ämnen i denna artikel" in lowered:
+            break
+        name = is_person_name_only(block)
+        if not name:
+            continue
+        detail = clean_author_text(relevant_blocks[index + 1])
+        detail_lowered = detail.lower()
+        if not detail or len(detail) > 180:
+            continue
+        if any(term in detail_lowered for term in ("foto", "bild", "publicerad", "uppdaterad")):
+            continue
+        if not ROLE_RE.search(detail):
+            continue
+        add_author_display(displays, seen, f"{name}, {detail}")
+    return displays
+
+
 def extract_names_from_role_lines(blocks: list[str]) -> list[str]:
     names: list[str] = []
     for block in blocks:
@@ -810,7 +905,11 @@ def extract_names_from_role_lines(blocks: list[str]) -> list[str]:
 
 def clean_fallback_author_phrase(phrase: str) -> str:
     phrase = normalize_space(phrase)
-    phrase = re.split(r"\s+(?:i|på)\s+(?:Di|DN|GP|SvD|Svenska Dagbladet|Aftonbladet|Expressen)\b", phrase)[0]
+    phrase = re.split(
+        r"\s+(?:i|på)\s+"
+        r"(?:Altinget|Di|DN|GP|SvD|Svenska Dagbladet|Aftonbladet|Expressen)\b",
+        phrase,
+    )[0]
     phrase = re.sub(r"\s+Foto:.*$", "", phrase, flags=re.I)
     phrase = phrase.strip(" .,:;")
     if phrase.lower() in {"undertecknarna", "artikelförfattarna"}:
@@ -848,6 +947,9 @@ def extract_authors(
     for detail in extract_author_detail_lines(blocks):
         add_author_display(displays, seen, detail)
 
+    for detail in extract_adjacent_author_detail_lines(blocks):
+        add_author_display(displays, seen, detail)
+
     if not displays:
         for name in metadata_names or extract_names_from_role_lines(blocks):
             add_author_display(displays, seen, name)
@@ -872,7 +974,7 @@ def collect_article(
     if not is_required_section(site, article, metadata):
         return None
 
-    published_at = get_published_at(article, metadata, target_tz)
+    published_at = get_published_at(article, metadata, document, target_tz)
     if not published_at or not (window_start <= published_at < window_end):
         return None
 
