@@ -244,7 +244,7 @@ def render_report(articles: list[Article], target_date: date, timezone: ZoneInfo
         )
     lines.append("")
 
-    lines.append("## Antal per publikation")
+    lines.append("### Antal per publikation")
     lines.append("")
     lines.append("| Publikation | Artiklar |")
     lines.append("|---|---:|")
