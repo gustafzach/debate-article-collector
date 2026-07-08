@@ -1,7 +1,6 @@
 <p align="center">
   <img src="assets/banner.png" alt="Debattöversikt - svensk debattbevakning" width="900">
 </p>
-
 # Debattöversikt
 
 Det här repot samlar in debattartiklar från svenska nyhetssajter och gör två filer:
@@ -53,29 +52,29 @@ Om du vill köra för ett visst datum fyller du i datum i formatet:
 
 Använd samma format varje gång: år, månad, dag.
 
-Om du kör **Step II: Render debate report** manuellt måste motsvarande CSV-fil redan finnas i mappen `outputs`. Exempel:
+Om du kör **Step II: Render debate report** manuellt måste motsvarande CSV-fil redan finnas i mappen `outputs/csv`. Exempel:
 
 ```text
-outputs/debate_articles_2026-07-08.csv
+outputs/csv/debate_articles_20260708.csv
 ```
 
 ### Läs rapporten i GitHub
 
 När båda arbetsflödena är klara:
 
-1. Gå till mappen `outputs`.
+1. Gå till mappen `outputs/markdown`.
 2. Öppna filen som slutar på `.md`, till exempel:
 
 ```text
-outputs/debate_articles_2026-07-08.md
+outputs/markdown/debate_articles_20260708.md
 ```
 
 GitHub visar Markdown-filen som en vanlig läsbar textöversikt i webbläsaren.
 
-CSV-filen finns på samma plats om du vill öppna underlaget i ett kalkylprogram:
+CSV-filen finns i `outputs/csv` om du vill öppna underlaget i ett kalkylprogram:
 
 ```text
-outputs/debate_articles_2026-07-08.csv
+outputs/csv/debate_articles_20260708.csv
 ```
 
 Du kan också ladda ner filerna från själva Actions-körningen under rubriken **Artifacts**.
@@ -115,20 +114,20 @@ Skripten använder bara Pythons standardbibliotek. Du behöver alltså inte inst
 Byt ut datumet mot det datum du vill använda:
 
 ```bash
-python3 collect_debate_articles.py --date 2026-07-08 --output outputs/debate_articles_2026-07-08.csv --verbose
+python3 collect_debate_articles.py --date 2026-07-08 --verbose
 python3 render_debate_report.py --date 2026-07-08
 ```
 
 Efteråt finns rapporten här:
 
 ```text
-outputs/debate_articles_2026-07-08.md
+outputs/markdown/debate_articles_20260708.md
 ```
 
 CSV-filen finns här:
 
 ```text
-outputs/debate_articles_2026-07-08.csv
+outputs/csv/debate_articles_20260708.csv
 ```
 
 ### Kör på Windows
@@ -136,20 +135,20 @@ outputs/debate_articles_2026-07-08.csv
 Byt ut datumet mot det datum du vill använda:
 
 ```powershell
-py collect_debate_articles.py --date 2026-07-08 --output outputs/debate_articles_2026-07-08.csv --verbose
+py collect_debate_articles.py --date 2026-07-08 --verbose
 py render_debate_report.py --date 2026-07-08
 ```
 
 Efteråt finns rapporten här:
 
 ```text
-outputs/debate_articles_2026-07-08.md
+outputs/markdown/debate_articles_20260708.md
 ```
 
 CSV-filen finns här:
 
 ```text
-outputs/debate_articles_2026-07-08.csv
+outputs/csv/debate_articles_20260708.csv
 ```
 
 ### Om du inte anger datum
