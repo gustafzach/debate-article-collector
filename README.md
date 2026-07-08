@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Debattöversikt - svensk debattbevakning" width="900">
-</p>
-# Debattöversikt
+#Dagens debattare och ledare
 
 Det här repot samlar in debattartiklar och ledartexter från svenska nyhetssajter och genererar två filtyper:
 
