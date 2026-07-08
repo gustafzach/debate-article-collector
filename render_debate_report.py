@@ -222,6 +222,8 @@ def render_report(articles: list[Article], target_date: date, timezone: ZoneInfo
     new_articles = [article for article in articles if not is_reply_article(article)]
     reply_articles = [article for article in articles if is_reply_article(article)]
     lines: list[str] = []
+    lines.append("![Debattöversikt](../../assets/banner.png)")   # <-- add
+    lines.append("")
     lines.append(f"# Debattöversikt: {format_swedish_date(target_date)}")
     lines.append("")
     lines.append(
