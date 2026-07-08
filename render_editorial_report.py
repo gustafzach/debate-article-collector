@@ -219,7 +219,7 @@ def render_report(articles: list[Article], target_date: date, timezone: ZoneInfo
 
     generated_at = datetime.now(timezone)
     lines: list[str] = []
-    lines.append("![Ledaröversikt](../../assets/banner_ledare.png)")   # <-- add
+    lines.append("![Ledaröversikt](../../../assets/banner_ledare.png)")   # <-- add
     lines.append("")
     lines.append(f"# Ledaröversikt: {format_swedish_date(target_date)}")
     lines.append("")
