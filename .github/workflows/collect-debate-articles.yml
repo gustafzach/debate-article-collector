@@ -4,12 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: "Report date YYYY-MM-DD. Leave empty for today."
+        description: "Report date YYYY-MM-DD. Leave empty for today in Europe/Stockholm."
         required: false
         type: string
 
+  # GitHub cron is UTC. 07:00 UTC is 09:00 in Sweden during summer time
+  # and 08:00 during winter time.
   schedule:
-    - cron: "00 7 * * *"
+    - cron: "0 7 * * *"
 
 jobs:
   collect:
@@ -25,19 +27,17 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Run collector
         id: run_collector
+        env:
+          INPUT_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || '' }}
         run: |
           mkdir -p outputs
 
-          INPUT_DATE="${{ github.event.inputs.date }}"
-
           if [ -n "$INPUT_DATE" ]; then
             RUN_DATE="$INPUT_DATE"
-          elif [ "${{ github.event_name }}" = "schedule" ]; then
-            RUN_DATE=$(TZ=Europe/Stockholm date -d "yesterday" +%F)
           else
             RUN_DATE=$(TZ=Europe/Stockholm date +%F)
           fi
@@ -67,3 +67,5 @@ jobs:
           git add outputs/
           git commit -m "Add debate articles for ${{ steps.run_collector.outputs.run_date }}" || echo "No changes to commit"
           git push
+
+Filter files
