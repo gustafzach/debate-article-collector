@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Debattöversikt - svensk debattbevakning" width="900">
+</p>
+
 # Debattöversikt
 
 Det här repot samlar in debattartiklar från svenska nyhetssajter och gör två filer:
