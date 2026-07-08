@@ -1,4 +1,4 @@
-name: Render debate report
+name: Step II: Render debate report
 
 on:
   workflow_run:
