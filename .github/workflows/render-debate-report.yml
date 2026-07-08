@@ -53,8 +53,8 @@ jobs:
           fi
 
           RUN_STAMP=$(printf "%s" "$RUN_DATE" | tr -d "-")
-          CSV_FILE="outputs/csv/debate_articles_${RUN_STAMP}.csv"
-          MD_FILE="outputs/markdown/debate_articles_${RUN_STAMP}.md"
+          CSV_FILE="outputs/debattartiklar/csv/debate_articles_${RUN_STAMP}.csv"
+          MD_FILE="outputs/debattartiklar/md/debate_articles_${RUN_STAMP}.md"
 
           if [ ! -f "$CSV_FILE" ]; then
             echo "Expected CSV file does not exist: $CSV_FILE" >&2
@@ -82,6 +82,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add outputs/markdown/
+          git add outputs/debattartiklar/md/
           git commit -m "Add debate report for ${{ steps.render_report.outputs.run_date }}" || echo "No changes to commit"
           git push
