@@ -9,8 +9,10 @@ Det här repot samlar in debattartiklar och ledartexter från svenska nyhetssajt
 
 Markdown-rapporterna hamnar i dessa GitHub-mappar:
 
-- [Senaste debattöversikter](https://github.com/OWNER/REPO/tree/main/outputs/debattartiklar/md)
-- [Senaste ledaröversikter](https://github.com/OWNER/REPO/tree/main/outputs/ledartexter/md)
+
+
+- [Senaste debattöversikter](https://github.com/gustafzach/debate-article-collector/tree/main/outputs/debattartiklar/md)
+- [Senaste ledaröversikter](https://github.com/gustafzach/debate-article-collector/tree/main/outputs/ledartexter/md)
 
 Byt ut `OWNER/REPO` mot rätt GitHub-repo när repot är publicerat.
 
