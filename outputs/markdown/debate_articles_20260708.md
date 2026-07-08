@@ -1,8 +1,10 @@
+![Debattöversikt](../../assets/banner.png)
+
 # Debattöversikt: 08 juli 2026
 
 **Täckningsperiod:** 2026-07-07 17:55 till 2026-07-09 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-08 22:50 Europe/Stockholm
+**Genererad:** 2026-07-08 23:02 Europe/Stockholm
 
 ## Översikt
 
