@@ -1,8 +1,10 @@
+![Ledaröversikt](../../../assets/banner_ledare.png)
+
 # Ledaröversikt: 08 juli 2026
 
 **Täckningsperiod:** 2026-07-07 17:55 till 2026-07-09 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-08 23:55 Europe/Stockholm
+**Genererad:** 2026-07-09 00:19 Europe/Stockholm
 
 ## Översikt
 
