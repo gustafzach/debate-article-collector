@@ -1,4 +1,4 @@
-#Dagens debattare och ledare
+# Dagens debattare och ledare
 
 Det här repot samlar in debattartiklar och ledartexter från svenska nyhetssajter och genererar två filtyper:
 
