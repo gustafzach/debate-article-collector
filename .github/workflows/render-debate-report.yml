@@ -1,8 +1,8 @@
-name: Step II: Render debate report
+name: "Step II: Render debate report"
 
 on:
   workflow_run:
-    workflows: ["Collect debate articles"]
+    workflows: ["Step I: Collect debate articles"]
     types: [completed]
 
   workflow_dispatch:
