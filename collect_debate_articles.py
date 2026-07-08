@@ -1067,7 +1067,10 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output",
-        help="CSV output path. Defaults to outputs/csv/debate_articles_YYYYMMDD.csv.",
+        help=(
+            "CSV output path. Defaults to "
+            "outputs/debattartiklar/csv/debate_articles_YYYYMMDD.csv."
+        ),
     )
     parser.add_argument(
         "--max-articles-per-site",
@@ -1103,7 +1106,9 @@ def main() -> int:
         delay_seconds=args.delay_seconds,
         verbose=args.verbose,
     )
-    output_path = Path(args.output or f"outputs/csv/debate_articles_{target_date:%Y%m%d}.csv")
+    output_path = Path(
+        args.output or f"outputs/debattartiklar/csv/debate_articles_{target_date:%Y%m%d}.csv"
+    )
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     fieldnames = ("site", "published_at", "title", "authors", "preamble", "link")
