@@ -31,13 +31,13 @@ Det här är det rekommenderade sättet för kollegor som bara vill få fram dag
 
 1. Gå till repot på GitHub: `gustafzach/debate-article-collector`.
 2. Klicka på fliken **Actions**.
-3. Klicka på arbetsflödet **Collect debate articles** i vänstermenyn.
+3. Klicka på arbetsflödet **Step I: Collect debate articles** i vänstermenyn.
 4. Klicka på **Run workflow**.
 5. Lämna datumfältet tomt om du vill köra för dagens datum.
 6. Klicka på den gröna knappen **Run workflow**.
 7. Vänta tills körningen får en grön bock.
 
-När insamlingen är klar startar arbetsflödet **Render debate report** automatiskt. Det gör om CSV-filen till en läsbar Markdown-rapport.
+När insamlingen är klar startar arbetsflödet **Step II: Render debate report** automatiskt. Det gör om CSV-filen till en läsbar Markdown-rapport.
 
 ### Kör för ett annat datum
 
@@ -49,7 +49,7 @@ Om du vill köra för ett visst datum fyller du i datum i formatet:
 
 Använd samma format varje gång: år, månad, dag.
 
-Om du kör **Render debate report** manuellt måste motsvarande CSV-fil redan finnas i mappen `outputs`. Exempel:
+Om du kör **Step II: Render debate report** manuellt måste motsvarande CSV-fil redan finnas i mappen `outputs`. Exempel:
 
 ```text
 outputs/debate_articles_2026-07-08.csv
@@ -78,7 +78,7 @@ Du kan också ladda ner filerna från själva Actions-körningen under rubriken 
 
 ### Automatisk daglig körning
 
-Arbetsflödet **Collect debate articles** är schemalagt till:
+Arbetsflödet **Step I: Collect debate articles** är schemalagt till:
 
 ```text
 05:00 UTC
@@ -88,7 +88,7 @@ Under svensk sommartid motsvarar det:
 
 - 07:00 svensk tid
 
-Arbetsflödet **Render debate report** startar efter att insamlingen är klar. Vid den schemalagda morgonkörningen väntar det vid behov till 07:05 svensk tid innan rapporten skapas.
+Arbetsflödet **Step II: Render debate report** startar efter att insamlingen är klar. Vid den schemalagda morgonkörningen väntar det vid behov till 07:05 svensk tid innan rapporten skapas.
 
 Den schemalagda körningen använder dagens datum i svensk tid och tar med gårdagens artiklar från kl. 17:55. Den hittar de artiklar som finns publicerade när insamlingen sker.
 
