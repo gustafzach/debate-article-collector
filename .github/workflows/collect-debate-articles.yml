@@ -1,4 +1,4 @@
-name: Step 1: Collect debate articles
+name: Step I: Collect debate articles
 
 on:
   workflow_dispatch:
