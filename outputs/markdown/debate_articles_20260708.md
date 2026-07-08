@@ -4,7 +4,7 @@
 
 **Täckningsperiod:** 2026-07-07 17:55 till 2026-07-09 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-08 23:02 Europe/Stockholm
+**Genererad:** 2026-07-08 23:05 Europe/Stockholm
 
 ## Översikt
 
@@ -24,7 +24,7 @@
 | GP Debatt | 2 |
 | Sydsvenskan Debatt | 2 |
 
-## Läsordning
+## Publiceringar
 
 ### Nya debattartiklar
 
