@@ -1,0 +1,69 @@
+name: Collect debate articles
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Report date YYYY-MM-DD. Leave empty for today."
+        required: false
+        type: string
+
+  schedule:
+    - cron: "00 7 * * *"
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run collector
+        id: run_collector
+        run: |
+          mkdir -p outputs
+
+          INPUT_DATE="${{ github.event.inputs.date }}"
+
+          if [ -n "$INPUT_DATE" ]; then
+            RUN_DATE="$INPUT_DATE"
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            RUN_DATE=$(TZ=Europe/Stockholm date -d "yesterday" +%F)
+          else
+            RUN_DATE=$(TZ=Europe/Stockholm date +%F)
+          fi
+
+          OUTPUT_FILE="outputs/debate_articles_${RUN_DATE}.csv"
+
+          python3 collect_debate_articles.py \
+            --date "$RUN_DATE" \
+            --output "$OUTPUT_FILE" \
+            --verbose
+
+          echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "output_file=$OUTPUT_FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Upload CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: debate_articles_${{ steps.run_collector.outputs.run_date }}
+          path: ${{ steps.run_collector.outputs.output_file }}
+          retention-days: 30
+
+      - name: Commit CSV to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add outputs/
+          git commit -m "Add debate articles for ${{ steps.run_collector.outputs.run_date }}" || echo "No changes to commit"
+          git push
