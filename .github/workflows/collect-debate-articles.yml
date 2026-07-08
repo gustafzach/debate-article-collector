@@ -33,7 +33,7 @@ jobs:
         env:
           INPUT_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || '' }}
         run: |
-          mkdir -p outputs
+          mkdir -p outputs/csv
 
           if [ -n "$INPUT_DATE" ]; then
             RUN_DATE="$INPUT_DATE"
@@ -41,7 +41,8 @@ jobs:
             RUN_DATE=$(TZ=Europe/Stockholm date +%F)
           fi
 
-          OUTPUT_FILE="outputs/debate_articles_${RUN_DATE}.csv"
+          RUN_STAMP=$(printf "%s" "$RUN_DATE" | tr -d "-")
+          OUTPUT_FILE="outputs/csv/debate_articles_${RUN_STAMP}.csv"
 
           python3 collect_debate_articles.py \
             --date "$RUN_DATE" \
@@ -49,12 +50,13 @@ jobs:
             --verbose
 
           echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "run_stamp=$RUN_STAMP" >> "$GITHUB_OUTPUT"
           echo "output_file=$OUTPUT_FILE" >> "$GITHUB_OUTPUT"
 
       - name: Upload CSV artifact
         uses: actions/upload-artifact@v7
         with:
-          name: debate_articles_${{ steps.run_collector.outputs.run_date }}
+          name: debate_articles_${{ steps.run_collector.outputs.run_stamp }}
           path: ${{ steps.run_collector.outputs.output_file }}
           retention-days: 30
 
