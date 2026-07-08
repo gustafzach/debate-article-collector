@@ -54,7 +54,9 @@ class Article:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Render outputs/debate_articles_YYYY-MM-DD.csv as a Swedish Markdown policy brief."
+        description=(
+            "Render outputs/csv/debate_articles_YYYYMMDD.csv as a Swedish Markdown policy brief."
+        )
     )
     parser.add_argument(
         "--date",
@@ -67,11 +69,11 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input",
-        help="CSV input path. Defaults to outputs/debate_articles_YYYY-MM-DD.csv.",
+        help="CSV input path. Defaults to outputs/csv/debate_articles_YYYYMMDD.csv.",
     )
     parser.add_argument(
         "--output",
-        help="Markdown output path. Defaults to outputs/debate_articles_YYYY-MM-DD.md.",
+        help="Markdown output path. Defaults to outputs/markdown/debate_articles_YYYYMMDD.md.",
     )
     return parser.parse_args()
 
@@ -248,7 +250,7 @@ def render_report(articles: list[Article], target_date: date, timezone: ZoneInfo
         lines.append(f"| {markdown_escape(site_label(site))} | {site_counts[site]} |")
     lines.append("")
 
-    lines.append("## Publiceringar")
+    lines.append("## Läsordning")
     lines.append("")
     lines.append("### Nya debattartiklar")
     lines.append("")
@@ -286,8 +288,9 @@ def main() -> int:
         else datetime.now(timezone).date()
     )
 
-    input_path = Path(args.input or f"outputs/debate_articles_{target_date.isoformat()}.csv")
-    output_path = Path(args.output or f"outputs/debate_articles_{target_date.isoformat()}.md")
+    date_stamp = f"{target_date:%Y%m%d}"
+    input_path = Path(args.input or f"outputs/csv/debate_articles_{date_stamp}.csv")
+    output_path = Path(args.output or f"outputs/markdown/debate_articles_{date_stamp}.md")
 
     articles = read_articles(input_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
