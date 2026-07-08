@@ -33,7 +33,7 @@ jobs:
         env:
           INPUT_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || '' }}
         run: |
-          mkdir -p outputs/csv
+          mkdir -p outputs/debattartiklar/csv
 
           if [ -n "$INPUT_DATE" ]; then
             RUN_DATE="$INPUT_DATE"
@@ -42,7 +42,7 @@ jobs:
           fi
 
           RUN_STAMP=$(printf "%s" "$RUN_DATE" | tr -d "-")
-          OUTPUT_FILE="outputs/csv/debate_articles_${RUN_STAMP}.csv"
+          OUTPUT_FILE="outputs/debattartiklar/csv/debate_articles_${RUN_STAMP}.csv"
 
           python3 collect_debate_articles.py \
             --date "$RUN_DATE" \
