@@ -22,6 +22,7 @@ REPORT_SITE_ORDER = (
     ("Dagens industri Debatt", "Di Debatt"),
     ("GP Debatt", "GP Debatt"),
     ("Sydsvenskan Opinion", "Sydsvenskan Debatt"),
+    ("Altinget Debatt", "Altinget Debatt"),
 )
 REPORT_SITE_LABELS = dict(REPORT_SITE_ORDER)
 SWEDISH_MONTHS = {
@@ -247,7 +248,7 @@ def render_report(articles: list[Article], target_date: date, timezone: ZoneInfo
         lines.append(f"| {markdown_escape(site_label(site))} | {site_counts[site]} |")
     lines.append("")
 
-    lines.append("## Publiceringsordning")
+    lines.append("## Läsordning")
     lines.append("")
     lines.append("### Nya debattartiklar")
     lines.append("")
