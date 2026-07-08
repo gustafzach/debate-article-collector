@@ -14,6 +14,7 @@ Verktyget hämtar artiklar från följande debattsidor:
 - Di Debatt
 - GP Debatt
 - Sydsvenskan Debatt/Opinion
+- Altinget Debatt
 
 Som standard täcker varje körning:
 
@@ -80,15 +81,16 @@ Du kan också ladda ner filerna från själva Actions-körningen under rubriken 
 Arbetsflödet **Collect debate articles** är schemalagt till:
 
 ```text
-07:00 UTC
+05:00 UTC
 ```
 
-Det motsvarar normalt:
+Under svensk sommartid motsvarar det:
 
-- 09:00 svensk sommartid
-- 08:00 svensk vintertid
+- 07:00 svensk tid
 
-Den schemalagda körningen använder dagens datum i svensk tid och tar med gårdagens artiklar från kl. 17:55. Den hittar de artiklar som finns publicerade när körningen sker.
+Arbetsflödet **Render debate report** startar efter att insamlingen är klar. Vid den schemalagda morgonkörningen väntar det vid behov till 07:05 svensk tid innan rapporten skapas.
+
+Den schemalagda körningen använder dagens datum i svensk tid och tar med gårdagens artiklar från kl. 17:55. Den hittar de artiklar som finns publicerade när insamlingen sker.
 
 ## Alternativ 2: Kör lokalt på egen dator
 
@@ -151,29 +153,6 @@ outputs/debate_articles_2026-07-08.csv
 Om `--date` utelämnas använder skripten dagens datum i svensk tid.
 
 För tydlighet rekommenderas ändå att ange datum explicit när du kör lokalt, särskilt om du vill dela resultatet med andra.
-
-## Vad rapporten innehåller
-
-Markdown-rapporten innehåller:
-
-- övergripande antal artiklar
-- antal artiklar per publikation
-- läsordning med de senaste artiklarna först
-- separat lista för repliker och slutrepliker
-- artikelavsnitt per debattsida
-- titel, publiceringstid, ingress, författare/avsändare och länk
-
-När titel eller ingress innehåller `replik` eller `slutreplik` läggs artikeln i en separat replikdel. Syftet är att nya debattartiklar ska vara lättare att hitta först.
-
-## Filer
-
-De viktigaste filerna är:
-
-- `collect_debate_articles.py`: hämtar artiklar och skapar CSV
-- `render_debate_report.py`: gör om CSV till Markdown
-- `.github/workflows/collect-debate-articles.yml`: GitHub Actions-flöde för insamlingen
-- `.github/workflows/render-debate-report.yml`: GitHub Actions-flöde för rapporten
-- `outputs/`: mapp där CSV- och Markdown-filer sparas
 
 ## Begränsningar
 
