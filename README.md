@@ -3,12 +3,32 @@
 </p>
 # Debattöversikt
 
-Det här repot samlar in debattartiklar från svenska nyhetssajter och gör två filer:
+Det här repot samlar in debattartiklar och ledartexter från svenska nyhetssajter och genererar två filtyper:
 
-- en CSV-fil som kan öppnas i Excel, Google Sheets eller Numbers
 - en Markdown-rapport som är lätt att läsa direkt i GitHub
+- en CSV-fil som kan öppnas i Excel, Google Sheets eller Numbers
 
-Verktyget hämtar artiklar från följande debattsidor:
+## Senaste rapporter
+
+Markdown-rapporterna hamnar i dessa GitHub-mappar:
+
+- [Senaste debattöversikter](https://github.com/OWNER/REPO/tree/main/outputs/debattartiklar/md)
+- [Senaste ledaröversikter](https://github.com/OWNER/REPO/tree/main/outputs/ledartexter/md)
+
+Byt ut `OWNER/REPO` mot rätt GitHub-repo när repot är publicerat.
+
+## Källor
+
+Som standard täcker varje körning:
+
+- artiklar publicerade i dag
+- artiklar publicerade i går från och med kl. 17:55
+
+Datum och tid tolkas i svensk tid. 
+
+### Debattartiklar
+
+Debattflödet hämtar artiklar från:
 
 - DN Debatt
 - Expressen Debatt
@@ -19,28 +39,49 @@ Verktyget hämtar artiklar från följande debattsidor:
 - Sydsvenskan Debatt/Opinion
 - Altinget Debatt
 
-Som standard täcker varje körning:
+### Ledartexter
 
-- artiklar publicerade i dag
-- artiklar publicerade i går från och med kl. 17:55
+Ledarflödet hämtar texter från:
 
-Datum och tid tolkas i svensk tid, alltså `Europe/Stockholm`.
+- DN Ledare: `https://www.dn.se/ledare/`
+- SvD Ledare: `https://www.svd.se/ledare`
+- Di Ledare: `https://www.di.se/ledare/`
+- Expressen Ledare: `https://www.expressen.se/ledare/`
+- Aftonbladet Ledare: `https://www.aftonbladet.se/ledare`
+- GP Ledare: `https://www.gp.se/ledare`
+- Sydsvenskan Huvudledare: `https://www.sydsvenskan.se/huvudledare`
+
 
 ## Alternativ 1: Kör online i GitHub
 
-Det här är det rekommenderade sättet för kollegor som bara vill få fram dagens debattöversikt.
-
 ### Kör dagens insamling
 
-1. Gå till repot på GitHub: `gustafzach/debate-article-collector`.
-2. Klicka på fliken **Actions**.
-3. Klicka på arbetsflödet **Step I: Collect debate articles** i vänstermenyn.
-4. Klicka på **Run workflow**.
-5. Lämna datumfältet tomt om du vill köra för dagens datum.
-6. Klicka på den gröna knappen **Run workflow**.
-7. Vänta tills körningen får en grön bock.
+1. Gå till fliken **Actions** i GitHub.
+2. Välj önskat arbetsflöde.
+3. Klicka på **Run workflow**.
+4. Lämna datumfältet tomt för dagens datum i svensk tid, eller ange datum i formatet:
 
-När insamlingen är klar startar arbetsflödet **Step II: Render debate report** automatiskt. Det gör om CSV-filen till en läsbar Markdown-rapport.
+```text
+2026-07-08
+```
+
+Om du kör ett renderingsflöde manuellt måste motsvarande CSV-fil redan finnas i rätt CSV-mapp.
+
+### Automatisk daglig körning
+
+Arbetsflödet **Step I: Collect debate articles** är schemalagt till:
+
+```text
+05:00 UTC
+```
+
+Under svensk sommartid motsvarar det:
+
+- 07:00 svensk tid
+
+Arbetsflödet **Step II: Render debate report** startar efter att insamlingen är klar. Vid den schemalagda morgonkörningen väntar det vid behov till 07:05 svensk tid innan rapporten skapas.
+
+Den schemalagda körningen använder dagens datum i svensk tid och tar med gårdagens artiklar från kl. 17:55. Den hittar de artiklar som finns publicerade när insamlingen sker.
 
 ### Kör för ett annat datum
 
@@ -79,21 +120,6 @@ outputs/csv/debate_articles_20260708.csv
 
 Du kan också ladda ner filerna från själva Actions-körningen under rubriken **Artifacts**.
 
-### Automatisk daglig körning
-
-Arbetsflödet **Step I: Collect debate articles** är schemalagt till:
-
-```text
-05:00 UTC
-```
-
-Under svensk sommartid motsvarar det:
-
-- 07:00 svensk tid
-
-Arbetsflödet **Step II: Render debate report** startar efter att insamlingen är klar. Vid den schemalagda morgonkörningen väntar det vid behov till 07:05 svensk tid innan rapporten skapas.
-
-Den schemalagda körningen använder dagens datum i svensk tid och tar med gårdagens artiklar från kl. 17:55. Den hittar de artiklar som finns publicerade när insamlingen sker.
 
 ## Alternativ 2: Kör lokalt på egen dator
 
@@ -109,53 +135,71 @@ Det här alternativet passar om du vill köra verktyget på en egen Mac eller Wi
 
 Skripten använder bara Pythons standardbibliotek. Du behöver alltså inte installera extra Python-paket.
 
-### Kör på Mac
+### Val av datum
 
-Byt ut datumet mot det datum du vill använda:
+Byt ut datumet mot det datum du vill använda. Om `--date` utelämnas använder skripten dagens datum i svensk tid.
+
+För tydlighet rekommenderas ändå att ange datum explicit när du kör lokalt, särskilt om du vill dela resultatet med andra.
+
+
+### Debattartiklar
+
+På Mac:
 
 ```bash
 python3 collect_debate_articles.py --date 2026-07-08 --verbose
 python3 render_debate_report.py --date 2026-07-08
 ```
 
-Efteråt finns rapporten här:
-
-```text
-outputs/markdown/debate_articles_20260708.md
-```
-
-CSV-filen finns här:
-
-```text
-outputs/csv/debate_articles_20260708.csv
-```
-
-### Kör på Windows
-
-Byt ut datumet mot det datum du vill använda:
+På Windows:
 
 ```powershell
 py collect_debate_articles.py --date 2026-07-08 --verbose
 py render_debate_report.py --date 2026-07-08
 ```
 
-Efteråt finns rapporten här:
+Resultaten hamnar här:
 
 ```text
-outputs/markdown/debate_articles_20260708.md
+outputs/debattartiklar/csv/debate_articles_20260708.csv
+outputs/debattartiklar/md/debate_articles_20260708.md
 ```
 
-CSV-filen finns här:
+### Ledartexter
+
+På Mac:
+
+```bash
+python3 collect_editorials.py --date 2026-07-08 --verbose
+python3 render_editorial_report.py --date 2026-07-08
+```
+
+På Windows:
+
+```powershell
+py collect_editorials.py --date 2026-07-08 --verbose
+py render_editorial_report.py --date 2026-07-08
+```
+
+Resultaten hamnar här:
 
 ```text
-outputs/csv/debate_articles_20260708.csv
+outputs/ledartexter/csv/editorials_20260708.csv
+outputs/ledartexter/md/editorials_20260708.md
 ```
 
-### Om du inte anger datum
+## Fält i CSV
 
-Om `--date` utelämnas använder skripten dagens datum i svensk tid.
+Båda CSV-typerna använder samma grundfält:
 
-För tydlighet rekommenderas ändå att ange datum explicit när du kör lokalt, särskilt om du vill dela resultatet med andra.
+- `site`
+- `published_at`
+- `title`
+- `authors`
+- `preamble`
+- `link`
+
+Det gör att filerna är enkla att analysera parallellt, trots att källorna och renderingen skiljer mellan debattartiklar och ledartexter.
 
 ## Begränsningar
 
