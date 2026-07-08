@@ -19,6 +19,7 @@ import time
 import zlib
 from dataclasses import dataclass
 from datetime import date, datetime, time as datetime_time, timedelta
+from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlparse
@@ -1066,8 +1067,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output",
-        default="outputs/debate_articles_today.csv",
-        help="CSV output path. Default: outputs/debate_articles_today.csv.",
+        help="CSV output path. Defaults to outputs/csv/debate_articles_YYYYMMDD.csv.",
     )
     parser.add_argument(
         "--max-articles-per-site",
@@ -1103,12 +1103,15 @@ def main() -> int:
         delay_seconds=args.delay_seconds,
         verbose=args.verbose,
     )
+    output_path = Path(args.output or f"outputs/csv/debate_articles_{target_date:%Y%m%d}.csv")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
     fieldnames = ("site", "published_at", "title", "authors", "preamble", "link")
-    with open(args.output, "w", encoding="utf-8-sig", newline="") as handle:
+    with output_path.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
-    print(f"Wrote {len(rows)} articles to {args.output}", file=sys.stderr)
+    print(f"Wrote {len(rows)} articles to {output_path}", file=sys.stderr)
     return 0
 
 
