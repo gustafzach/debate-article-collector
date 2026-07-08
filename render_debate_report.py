@@ -248,7 +248,7 @@ def render_report(articles: list[Article], target_date: date, timezone: ZoneInfo
         lines.append(f"| {markdown_escape(site_label(site))} | {site_counts[site]} |")
     lines.append("")
 
-    lines.append("## Läsordning")
+    lines.append("## Publiceringar")
     lines.append("")
     lines.append("### Nya debattartiklar")
     lines.append("")
