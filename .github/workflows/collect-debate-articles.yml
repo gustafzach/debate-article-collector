@@ -67,5 +67,3 @@ jobs:
           git add outputs/
           git commit -m "Add debate articles for ${{ steps.run_collector.outputs.run_date }}" || echo "No changes to commit"
           git push
-
-Filter files
