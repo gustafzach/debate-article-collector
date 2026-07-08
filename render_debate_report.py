@@ -162,7 +162,7 @@ def render_queue_table(articles: list[Article], target_date: date) -> list[str]:
         site = markdown_escape(site_label(article.site))
         lines.append(
             f"| {format_queue_time(article.published_at, target_date)} | {site} | "
-            f"[{title}]({article.link}) | {authors} |"
+            f'<a href="{article.link}" target="_blank" rel="noopener noreferrer">{title}</a> | {authors} |'
         )
     return lines
 
@@ -170,7 +170,7 @@ def render_queue_table(articles: list[Article], target_date: date) -> list[str]:
 def render_article_note(article: Article, heading_level: int = 4) -> list[str]:
     heading = "#" * heading_level
     return [
-        f"{heading} [{markdown_escape(article.title)}]({article.link})",
+        f'{heading} <a href="{article.link}" target="_blank" rel="noopener noreferrer">{markdown_escape(article.title)}</a>',
         "",
         f"**Publicerad:** {format_datetime(article.published_at)}",
         "",
@@ -178,7 +178,7 @@ def render_article_note(article: Article, heading_level: int = 4) -> list[str]:
         "",
         f"**Författare/avsändare:** {markdown_escape(article.authors or 'Ej angivet')}",
         "",
-        f"**Länk:** <{article.link}>",
+        f'**Länk:** <a href="{article.link}" target="_blank" rel="noopener noreferrer">{article.link}</a>',
         "",
     ]
 
