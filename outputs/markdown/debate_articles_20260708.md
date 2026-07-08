@@ -4,7 +4,7 @@
 
 **Täckningsperiod:** 2026-07-07 17:55 till 2026-07-09 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-08 23:05 Europe/Stockholm
+**Genererad:** 2026-07-08 23:06 Europe/Stockholm
 
 ## Översikt
 
@@ -12,7 +12,7 @@
 - **Publikationer:** 7
 - **Publiceringsspann:** 2026-07-07 18:00 till 2026-07-08 20:00
 
-## Antal per publikation
+### Antal per publikation
 
 | Publikation | Artiklar |
 |---|---:|
