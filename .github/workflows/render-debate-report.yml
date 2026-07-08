@@ -1,0 +1,75 @@
+name: Render debate report
+
+on:
+  workflow_run:
+    workflows: ["Collect debate articles"]
+    types: [completed]
+
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Report date YYYY-MM-DD. Leave empty for today in Europe/Stockholm."
+        required: false
+        type: string
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Render Markdown report
+        id: render_report
+        env:
+          INPUT_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || '' }}
+        run: |
+          if [ -n "$INPUT_DATE" ]; then
+            RUN_DATE="$INPUT_DATE"
+          else
+            RUN_DATE=$(TZ=Europe/Stockholm date +%F)
+          fi
+
+          CSV_FILE="outputs/debate_articles_${RUN_DATE}.csv"
+          MD_FILE="outputs/debate_articles_${RUN_DATE}.md"
+
+          if [ ! -f "$CSV_FILE" ]; then
+            echo "Expected CSV file does not exist: $CSV_FILE" >&2
+            exit 1
+          fi
+
+          python3 render_debate_report.py \
+            --date "$RUN_DATE" \
+            --input "$CSV_FILE" \
+            --output "$MD_FILE"
+
+          echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "output_file=$MD_FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Upload Markdown artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: debate_report_${{ steps.render_report.outputs.run_date }}
+          path: ${{ steps.render_report.outputs.output_file }}
+          retention-days: 30
+
+      - name: Commit Markdown report to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add outputs/*.md
+          git commit -m "Add debate report for ${{ steps.render_report.outputs.run_date }}" || echo "No changes to commit"
+          git push
