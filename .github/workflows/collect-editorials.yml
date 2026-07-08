@@ -1,0 +1,70 @@
+name: "Step I: Collect editorials"
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Report date YYYY-MM-DD. Leave empty for today in Europe/Stockholm."
+        required: false
+        type: string
+
+  # GitHub cron is UTC. 05:00 UTC is 07:00 in Sweden during summer time.
+  schedule:
+    - cron: "0 5 * * *"
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Run collector
+        id: run_collector
+        env:
+          INPUT_DATE: ${{ github.event_name == 'workflow_dispatch' && inputs.date || '' }}
+        run: |
+          mkdir -p outputs/ledartexter/csv
+
+          if [ -n "$INPUT_DATE" ]; then
+            RUN_DATE="$INPUT_DATE"
+          else
+            RUN_DATE=$(TZ=Europe/Stockholm date +%F)
+          fi
+
+          RUN_STAMP=$(printf "%s" "$RUN_DATE" | tr -d "-")
+          OUTPUT_FILE="outputs/ledartexter/csv/editorials_${RUN_STAMP}.csv"
+
+          python3 collect_editorials.py \
+            --date "$RUN_DATE" \
+            --output "$OUTPUT_FILE" \
+            --verbose
+
+          echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "run_stamp=$RUN_STAMP" >> "$GITHUB_OUTPUT"
+          echo "output_file=$OUTPUT_FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Upload CSV artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: editorials_${{ steps.run_collector.outputs.run_stamp }}
+          path: ${{ steps.run_collector.outputs.output_file }}
+          retention-days: 30
+
+      - name: Commit CSV to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add outputs/
+          git commit -m "Add editorials for ${{ steps.run_collector.outputs.run_date }}" || echo "No changes to commit"
+          git push
