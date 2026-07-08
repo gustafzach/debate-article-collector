@@ -22,14 +22,24 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
+
+      - name: Wait until 07:05 Swedish time after scheduled collection
+        if: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.event == 'schedule' }}
+        run: |
+          TARGET_EPOCH=$(TZ=Europe/Stockholm date -d "$(TZ=Europe/Stockholm date +%F) 07:05" +%s)
+          NOW_EPOCH=$(date +%s)
+
+          if [ "$NOW_EPOCH" -lt "$TARGET_EPOCH" ]; then
+            sleep $((TARGET_EPOCH - NOW_EPOCH))
+          fi
 
       - name: Render Markdown report
         id: render_report
@@ -59,7 +69,7 @@ jobs:
           echo "output_file=$MD_FILE" >> "$GITHUB_OUTPUT"
 
       - name: Upload Markdown artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: debate_report_${{ steps.render_report.outputs.run_date }}
           path: ${{ steps.render_report.outputs.output_file }}
