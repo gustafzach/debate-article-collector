@@ -2,7 +2,7 @@
 
 **Täckningsperiod:** 2026-07-07 17:55 till 2026-07-09 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-08 21:22 Europe/Stockholm
+**Genererad:** 2026-07-08 22:33 Europe/Stockholm
 
 ## Översikt
 
@@ -22,13 +22,13 @@
 | GP Debatt | 2 |
 | Sydsvenskan Debatt | 2 |
 
-## Läsordning
+## Publiceringar
 
 ### Nya debattartiklar
 
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
-| 20:00 | DN Debatt | [”90 procent kan få högre inkomster utan klimatkollaps”](https://www.dn.se/debatt/90-procent-kan-fa-hogre-inkomster-utan-klimatkollaps/) | Thomas Piketty, professor i ekonomi vid Paris School of Economics och meddirektör för World Inequality Lab; Sebastian Silva; Olivier De Schutter, ordförande fö... |
+| 20:00 | DN Debatt | [”90 procent kan få högre inkomster utan klimatkollaps”](https://www.dn.se/debatt/90-procent-kan-fa-hogre-inkomster-utan-klimatkollaps/) | Thomas Piketty; Sebastian Silva |
 | 19:45 | SvD Debatt | [Teodorescu Måwe och Brodin: Reformera kampen mot antisemitismen](https://www.svd.se/a/6qW458/teodorescu-mawe-och-brodin-reformera-kampen-mot-antisemitismen) | Alice Teodorescu Måwe, Kristdemokraterna; Camilla Brodin, Kristdemokraterna |
 | 18:00 | Sydsvenskan Debatt | [”De skånska Moderaterna misslyckas inte endast med att stå upp för Skånes invånare.”](https://www.sydsvenskan.se/opinion/de-skanska-moderaterna-misslyckas-inte-endast-med-att-sta-upp-for-skanes-invanare/) | sex företrädare för Socialdemokraterna i Skåne |
 | 18:00 | Aftonbladet Debatt | [Är det AI som tvingar jätten att välja sida?](https://www.aftonbladet.se/debatt/a/k0dMEA/martin-rolinski-ar-det-ai-som-tvingar-spotify-att-valja-sida) | Martin Rolinski, artist och entreprenör; Torbjörn Sjöström, ordförande Novus, grundare Globeknot |
@@ -42,7 +42,7 @@
 | 05:00 | GP Debatt | [Göteborgarna förtjänar mer än en debatt om fasader](https://www.gp.se/debatt/goteborgarna-fortjanar-mer-an-en-debatt-om-fasader.7dcabb44-190f-43af-bef3-bc7ec6af01e3) | Christina Heikel, biträdande Näringspolitisk Chef, Västsvenska Handelskammaren; Jacob Sahlqvist, kontorschef, White Arkitekter Göteborg; Anna Henriksson, vd, S... |
 | 05:00 | Expressen Debatt | [DEBATT: Hur kunde Tidö slarva bort det här?](https://www.expressen.se/debatt/debatt-hur-kunde-tido-slarva-bort-det-har/) | Åsa Westlund, klimatpolitisk talesperson för Socialdemokraterna; Peter Hultqvist, försvarspolitisk talesperson för Socialdemokraterna |
 | 04:55 | GP Debatt | [Sverige måste bli bättre på att skapa företagare](https://www.gp.se/debatt/sverige-maste-bli-battre-pa-att-skapa-foretagare.0bf20db0-442e-4828-b715-4850c721c13c) | Magnus Demervall, vd Företagarna; Tove Jarl, vd Ung Företagsamhet |
-| 07/07 20:00 | DN Debatt | [”Snart är vi en digital koloni – Googleaffären senaste beviset”](https://www.dn.se/debatt/snart-ar-vi-en-digital-koloni-googleaffaren-senaste-beviset/) | Jonny Holmström, professor i informatik och föreståndare, Swedish Center for Digital Innovation (SCDI), Umeå universitet; Johan Magnusson, professor i informat... |
+| 07/07 20:00 | DN Debatt | [”Snart är vi en digital koloni – Googleaffären senaste beviset”](https://www.dn.se/debatt/snart-ar-vi-en-digital-koloni-googleaffaren-senaste-beviset/) | två professorer |
 | 07/07 19:45 | SvD Debatt | [Debattörer: Vården blir bättre med existentiella perspektiv](https://www.svd.se/a/7pBdk9/debattorer-varden-blir-battre-med-existentiella-perspektiv) | läkare och forskare |
 
 ### Repliker och slutrepliker
@@ -64,7 +64,7 @@
 
 **Ingress:** DN Debatt. Klimatkris och ojämlikhet hör ihop, skriver ekonomerna Olivier De Schutter, Thomas Piketty och Sebastian Silva-Leander.
 
-**Författare/avsändare:** Thomas Piketty, professor i ekonomi vid Paris School of Economics och meddirektör för World Inequality Lab; Sebastian Silva; Olivier De Schutter, ordförande för New Economies for Eradicating Poverty och tidigare FN:s särskilda rapportör om extrem fattigdom och mänskliga rättigheter
+**Författare/avsändare:** Thomas Piketty; Sebastian Silva
 
 **Länk:** <https://www.dn.se/debatt/90-procent-kan-fa-hogre-inkomster-utan-klimatkollaps/>
 
@@ -74,7 +74,7 @@
 
 **Ingress:** DN Debatt. Affären i Torsboda avvecklar Sveriges välstånd. Vi säljer elen – men Google tar vinsten, skriver två professorer.
 
-**Författare/avsändare:** Jonny Holmström, professor i informatik och föreståndare, Swedish Center for Digital Innovation (SCDI), Umeå universitet; Johan Magnusson, professor i informatik och föreståndare, Swedish Center for Digital Innovation (SCDI), Göteborgs universitet
+**Författare/avsändare:** två professorer
 
 **Länk:** <https://www.dn.se/debatt/snart-ar-vi-en-digital-koloni-googleaffaren-senaste-beviset/>
 
