@@ -4,13 +4,13 @@
 
 **Täckningsperiod:** 2026-07-08 17:55 till 2026-07-10 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-09 07:58 Europe/Stockholm
+**Genererad:** 2026-07-09 10:37 Europe/Stockholm
 
 ## Översikt
 
-- **Artiklar:** 9
+- **Artiklar:** 10
 - **Publikationer:** 6
-- **Publiceringsspann:** 2026-07-08 18:00 till 2026-07-09 06:30
+- **Publiceringsspann:** 2026-07-08 18:00 till 2026-07-09 10:00
 
 ## Antal per publikation
 
@@ -18,7 +18,7 @@
 |---|---:|
 | DN Debatt | 1 |
 | Expressen Debatt | 1 |
-| Aftonbladet Debatt | 2 |
+| Aftonbladet Debatt | 3 |
 | SvD Debatt | 1 |
 | GP Debatt | 2 |
 | Sydsvenskan Debatt | 2 |
@@ -43,7 +43,7 @@
 
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
-| - | - | Inga artiklar | - |
+| 10:00 | Aftonbladet Debatt | [Valfläsk löser inte L:s trovärdighetsproblem](https://www.aftonbladet.se/debatt/a/pBKnOV/mp-valflask-loser-inte-l-s-trovardighetsproblem) | Linus Lakso (MP), trafikpolitisk talesperson; Sandra Ivanovic Rubin (MP), regionråd Region Stockholm; Mätta Ivarsson (MP), gruppledare Region Skåne |
 
 ## Artiklar
 
@@ -92,6 +92,18 @@
 **Författare/avsändare:** Martin Rolinski, artist och entreprenör; Torbjörn Sjöström, ordförande Novus, grundare Globeknot
 
 **Länk:** <https://www.aftonbladet.se/debatt/a/k0dMEA/martin-rolinski-ar-det-ai-som-tvingar-spotify-att-valja-sida>
+
+#### Repliker och slutrepliker
+
+##### [Valfläsk löser inte L:s trovärdighetsproblem](https://www.aftonbladet.se/debatt/a/pBKnOV/mp-valflask-loser-inte-l-s-trovardighetsproblem)
+
+**Publicerad:** 2026-07-09 10:00
+
+**Ingress:** REPLIK. Om Liberalerna verkligen brunnit för billig kollektivtrafik hade det synts under mandatperioden – inte dykt upp kort före valet.
+
+**Författare/avsändare:** Linus Lakso (MP), trafikpolitisk talesperson; Sandra Ivanovic Rubin (MP), regionråd Region Stockholm; Mätta Ivarsson (MP), gruppledare Region Skåne
+
+**Länk:** <https://www.aftonbladet.se/debatt/a/pBKnOV/mp-valflask-loser-inte-l-s-trovardighetsproblem>
 
 ### SvD Debatt
 
