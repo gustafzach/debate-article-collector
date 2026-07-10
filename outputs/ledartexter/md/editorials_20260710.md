@@ -4,7 +4,7 @@
 
 **Täckningsperiod:** 2026-07-09 17:55 till 2026-07-11 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-10 09:27 Europe/Stockholm
+**Genererad:** 2026-07-10 10:21 Europe/Stockholm
 
 ## Översikt
 
@@ -67,7 +67,7 @@
 
 **Publicerad:** 2026-07-10 06:00
 
-**Ingress:** Vattenbristen blir inte löst av duktiga medborgare utan kräver politiskt ansvarstagande och friare prissättning.
+**Ingress:** Vattenbristen kräver politiskt ansvarstagande.
 
 **Byline/redaktion:** Sofia Ek Hallonqvist
 
