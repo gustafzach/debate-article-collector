@@ -4,22 +4,22 @@
 
 **Täckningsperiod:** 2026-07-09 17:55 till 2026-07-11 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-10 10:31 Europe/Stockholm
+**Genererad:** 2026-07-10 17:13 Europe/Stockholm
 
 ## Översikt
 
-- **Artiklar:** 10
+- **Artiklar:** 15
 - **Publikationer:** 7
-- **Publiceringsspann:** 2026-07-09 19:00 till 2026-07-10 08:00
+- **Publiceringsspann:** 2026-07-09 19:00 till 2026-07-10 15:32
 
 ## Antal per publikation
 
 | Publikation | Artiklar |
 |---|---:|
 | DN Debatt | 1 |
-| Expressen Debatt | 2 |
-| Aftonbladet Debatt | 1 |
-| SvD Debatt | 2 |
+| Expressen Debatt | 4 |
+| Aftonbladet Debatt | 3 |
+| SvD Debatt | 3 |
 | Di Debatt | 1 |
 | GP Debatt | 2 |
 | Sydsvenskan Debatt | 1 |
@@ -30,6 +30,11 @@
 
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
+| 15:32 | Expressen Debatt | [DEBATT: KD borde tacka oss](https://www.expressen.se/debatt/debatt-kd-borde-tacka-oss/) | Aida Hadžialić, gruppledare för Socialdemokraterna i Region Stockholm |
+| 15:30 | Aftonbladet Debatt | [Förstår ministrarna vad som egentligen pågår?](https://www.aftonbladet.se/debatt/a/GxO67Q/forstar-ministrarna-vad-som-egentligen-pagar) | Amani Awad, ST-läkare, Malmö; Ana Sarmiento Sanchez, ST-läkare Allmänmedicin, Malmö; Anna Fredland, ST-läkare barnmedicin, Skåne; Anna Karlsson, ST-läkare barn... |
+| 12:00 | Aftonbladet Debatt | [För Sverige i tiden – låt oss införa gladiatorspel](https://www.aftonbladet.se/debatt/a/k0dQ46/for-sverige-i-tiden-lat-oss-infora-gladiatorspel) | Martin Skoog, skribent |
+| 11:03 | Expressen Debatt | [DEBATT: Man kan vara politiker och ha en personlighet](https://www.expressen.se/debatt/debatt-man-kan-vara-politiker-och-ha-en-personlighet/) | Sarah Kullgren, förbundsordförande för Kristdemokratiska kvinnoförbundet (KD-K) |
+| 11:02 | SvD Debatt | [ST: Otydlig dom kring rebellmamman](https://www.svd.se/a/BxwwoG/st-otydlig-dom-kring-rebellmamman) | Britta Lejon, ordförande för Fackförbundet ST |
 | 07:30 | SvD Debatt | [Arvin Khoshnood: Ambassaden i Sverige bas för Irans spionage](https://www.svd.se/a/Wv8kwj/arvin-khoshnood-ambassaden-i-sverige-bas-for-irans-spionage) | Arvin Khoshnood |
 | 06:30 | Aftonbladet Debatt | [Byggandet har tvärnitat – studenterna drabbas](https://www.aftonbladet.se/debatt/a/7pBqzo/ingen-ska-behova-tacka-nej-till-studier-for-att-bostad-saknas) | Mikael Damberg (S), ekonomisk-politisk talesperson; Elfva Barrio, förbundsordförande S-studenter |
 | 05:30 | Sydsvenskan Debatt | [”Vad vill SD när det gäller forskning och utbildning?”](https://www.sydsvenskan.se/opinion/vad-vill-sd-nar-det-galler-forskning-och-utbildning/) | företrädare för Sveriges unga akademi |
@@ -44,7 +49,7 @@
 
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
-| 08:00 | Di Debatt | [Replik: Vi har inte råd med en rödgrön regering](https://www.di.se/debatt/replik-vi-har-inte-rad-med-en-rodgron-regering/) | Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer; Enligt Jennie Brobe... |
+| 08:00 | Di Debatt | [Replik: Vi har inte råd med en rödgrön regering](https://www.di.se/debatt/replik-vi-har-inte-rad-med-en-rodgron-regering/) | Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer |
 
 ## Artiklar
 
@@ -61,6 +66,26 @@
 **Länk:** <https://www.dn.se/debatt/ska-pfas-drabbade-aldrig-kunna-fa-ersattning/>
 
 ### Expressen Debatt
+
+#### [DEBATT: KD borde tacka oss](https://www.expressen.se/debatt/debatt-kd-borde-tacka-oss/)
+
+**Publicerad:** 2026-07-10 15:32
+
+**Ingress:** Sjukvårdsminister Elisabet Lann (KD) tycker att Socialdemokraterna borde ansluta sig till Kristdemokraternas politik. I själva verket är det vår förtjänst att hon kan glädjas åt framstegen i sjukvården, skriver Aida Hadžialić (S). Aida Hadžialić är gruppledare för Socialdemokraterna i Region Stockholm.
+
+**Författare/avsändare:** Aida Hadžialić, gruppledare för Socialdemokraterna i Region Stockholm
+
+**Länk:** <https://www.expressen.se/debatt/debatt-kd-borde-tacka-oss/>
+
+#### [DEBATT: Man kan vara politiker och ha en personlighet](https://www.expressen.se/debatt/debatt-man-kan-vara-politiker-och-ha-en-personlighet/)
+
+**Publicerad:** 2026-07-10 11:03
+
+**Ingress:** Linn Svansbo har fel om Ebba Busch (KD). Det är inte en motsättning att bedriva politik och samtidigt bjuda på sig själv, skriver Sarah Kullgren, ordförande för Kristdemokraternas kvinnoförbund. ”Det är svårt att ta Linn Svansbos önskan på allvar, med tanke på de reformer som föreslagits under Busch ledarskap”, skriver Sarah Kullgren (KD).
+
+**Författare/avsändare:** Sarah Kullgren, förbundsordförande för Kristdemokratiska kvinnoförbundet (KD-K)
+
+**Länk:** <https://www.expressen.se/debatt/debatt-man-kan-vara-politiker-och-ha-en-personlighet/>
 
 #### [DEBATT: V vill höja inkomstpensionen med 2 000 kronor](https://www.expressen.se/debatt/debatt-v-vill-hoja-inkomstpensionen-med-2-000-kronor/)
 
@@ -84,6 +109,26 @@
 
 ### Aftonbladet Debatt
 
+#### [Förstår ministrarna vad som egentligen pågår?](https://www.aftonbladet.se/debatt/a/GxO67Q/forstar-ministrarna-vad-som-egentligen-pagar)
+
+**Publicerad:** 2026-07-10 15:30
+
+**Ingress:** Förstår ministrarna vad som egentligen pågår?
+
+**Författare/avsändare:** Amani Awad, ST-läkare, Malmö; Ana Sarmiento Sanchez, ST-läkare Allmänmedicin, Malmö; Anna Fredland, ST-läkare barnmedicin, Skåne; Anna Karlsson, ST-läkare barn- och ungdomsmedicin, Malmö; Annika M Forsberg, läkare, palliativa enheten, Malmö; Azhar Sugawi, ST- läkare, allmänmedicin, Avesta; Cordelia Penman, ST-läkare i klinisk mikrobiologi, Lund; Dania Al-Sharify, ST-läkare, Malmö; Gert Andersson, docent, överläkare, Lund; Helena Thiman, läkare gynekologi & obstetrik, Kristianstad; Lina Myritz, ST-läkare anestesi och intensivvård, Helsingborg; Linnea Rusek, läkare, Mora; Mariam Vazdekis, ST läkare i barn- och ungdomsmedicin, Helsingborg; Miriam Lukasiak, specialistläkare akutsjukvård, ST-läkare anestesi/intensivvård, Helsingborg; Ranya Ramahi, leg. läkare/ST-läkare, Kristianstad; Sergio Padoan, läkare (pensionerad ÖL. och chefsläkare ÖNH-spec. med dr, Malmö; Daniel Möller, författare, Malmö; Karin Norman, professor emerita, Stockholm; Rebecca Sunnerås Jonsson, lärare, Malmö
+
+**Länk:** <https://www.aftonbladet.se/debatt/a/GxO67Q/forstar-ministrarna-vad-som-egentligen-pagar>
+
+#### [För Sverige i tiden – låt oss införa gladiatorspel](https://www.aftonbladet.se/debatt/a/k0dQ46/for-sverige-i-tiden-lat-oss-infora-gladiatorspel)
+
+**Publicerad:** 2026-07-10 12:00
+
+**Ingress:** För Sverige i tiden – låt oss införa gladiatorspel
+
+**Författare/avsändare:** Martin Skoog, skribent
+
+**Länk:** <https://www.aftonbladet.se/debatt/a/k0dQ46/for-sverige-i-tiden-lat-oss-infora-gladiatorspel>
+
 #### [Byggandet har tvärnitat – studenterna drabbas](https://www.aftonbladet.se/debatt/a/7pBqzo/ingen-ska-behova-tacka-nej-till-studier-for-att-bostad-saknas)
 
 **Publicerad:** 2026-07-10 06:30
@@ -95,6 +140,16 @@
 **Länk:** <https://www.aftonbladet.se/debatt/a/7pBqzo/ingen-ska-behova-tacka-nej-till-studier-for-att-bostad-saknas>
 
 ### SvD Debatt
+
+#### [ST: Otydlig dom kring rebellmamman](https://www.svd.se/a/BxwwoG/st-otydlig-dom-kring-rebellmamman)
+
+**Publicerad:** 2026-07-10 11:02
+
+**Ingress:** DEBATT. Vi överklagar nu domen i målet med rebellmamman. Vi måste ha en tydlig praxis för vad som anses vara en säkerhetsrisk och inte när det gäller statliga anställningar, skriver företrädare för Fackförbundet ST.
+
+**Författare/avsändare:** Britta Lejon, ordförande för Fackförbundet ST
+
+**Länk:** <https://www.svd.se/a/BxwwoG/st-otydlig-dom-kring-rebellmamman>
 
 #### [Arvin Khoshnood: Ambassaden i Sverige bas för Irans spionage](https://www.svd.se/a/Wv8kwj/arvin-khoshnood-ambassaden-i-sverige-bas-for-irans-spionage)
 
@@ -126,7 +181,7 @@
 
 **Ingress:** Om 65 dagar är det val i Sverige. Men det är också ett vägval om Sveriges framtid. Om vi ska fortsätta bygga ett land känt för framgångsrikt företagande, innovation och hårt arbete – eller riskera att återvända till en tid då dödligt gängvåld plågade vårt samhälle och präglade bilden av Sverige utomlands, skriver Ulf Kristersson (M) partiledare, Elisabeth Svantesson (M), vice partiordförande och Gunnar Strömmer (M)
 
-**Författare/avsändare:** Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer; Enligt Jennie Brobeck, men inte i form av färdiga mallar, utan snarare handlar det om att ta till vara på den erfarenhet som redan finns i rummet; Gunnar Ekman, men inte i form av färdiga mallar, utan snarare handlar det om att ta till vara på den erfarenhet som redan finns i rummet
+**Författare/avsändare:** Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer
 
 **Länk:** <https://www.di.se/debatt/replik-vi-har-inte-rad-med-en-rodgron-regering/>
 
