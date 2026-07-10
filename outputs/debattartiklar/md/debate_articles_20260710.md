@@ -4,7 +4,7 @@
 
 **Täckningsperiod:** 2026-07-09 17:55 till 2026-07-11 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-10 09:19 Europe/Stockholm
+**Genererad:** 2026-07-10 10:31 Europe/Stockholm
 
 ## Översikt
 
@@ -44,7 +44,7 @@
 
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
-| 08:00 | Di Debatt | [Replik: Vi har inte råd med en rödgrön regering](https://www.di.se/debatt/replik-vi-har-inte-rad-med-en-rodgron-regering/) | Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer |
+| 08:00 | Di Debatt | [Replik: Vi har inte råd med en rödgrön regering](https://www.di.se/debatt/replik-vi-har-inte-rad-med-en-rodgron-regering/) | Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer; Enligt Jennie Brobe... |
 
 ## Artiklar
 
@@ -126,7 +126,7 @@
 
 **Ingress:** Om 65 dagar är det val i Sverige. Men det är också ett vägval om Sveriges framtid. Om vi ska fortsätta bygga ett land känt för framgångsrikt företagande, innovation och hårt arbete – eller riskera att återvända till en tid då dödligt gängvåld plågade vårt samhälle och präglade bilden av Sverige utomlands, skriver Ulf Kristersson (M) partiledare, Elisabeth Svantesson (M), vice partiordförande och Gunnar Strömmer (M)
 
-**Författare/avsändare:** Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer
+**Författare/avsändare:** Ulf Kristersson (M), partiledare Elisabeth Svantesson (M), vice partiordförande Gunnar Strömmer (M); Elisabeth Svantesson; Gunnar Strömmer; Enligt Jennie Brobeck, men inte i form av färdiga mallar, utan snarare handlar det om att ta till vara på den erfarenhet som redan finns i rummet; Gunnar Ekman, men inte i form av färdiga mallar, utan snarare handlar det om att ta till vara på den erfarenhet som redan finns i rummet
 
 **Länk:** <https://www.di.se/debatt/replik-vi-har-inte-rad-med-en-rodgron-regering/>
 
