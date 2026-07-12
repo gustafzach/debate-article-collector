@@ -7,14 +7,11 @@ Det här repot samlar in debattartiklar och ledartexter från svenska nyhetssajt
 
 ## Senaste rapporter
 
-Markdown-rapporterna hamnar i dessa GitHub-mappar:
-
-
+Som *läsare* hittar du senaste Markdown-rapporterna i dessa GitHub-mappar:
 
 - [Senaste debattöversikter](https://github.com/gustafzach/debate-article-collector/tree/main/outputs/debattartiklar/md)
 - [Senaste ledaröversikter](https://github.com/gustafzach/debate-article-collector/tree/main/outputs/ledartexter/md)
 
-Byt ut `OWNER/REPO` mot rätt GitHub-repo när repot är publicerat.
 
 ## Källor
 
@@ -50,8 +47,10 @@ Ledarflödet hämtar texter från:
 - GP Ledare: `https://www.gp.se/ledare`
 - Sydsvenskan Huvudledare: `https://www.sydsvenskan.se/huvudledare`
 
-
+# Egen implementering 
 ## Alternativ 1: Kör online i GitHub
+
+Skapa ett eget Github-konto och kopiera detta repository. Därefter:
 
 ### Kör dagens insamling
 
