@@ -9,8 +9,10 @@ on:
         type: string
 
   # GitHub cron is UTC. 05:00 UTC is 07:00 in Sweden during summer time.
+  # Run daily at 06:55 Europe/Stockholm.
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "55 6 * * *"
+      timezone: "Europe/Stockholm"
 
 jobs:
   collect:
