@@ -11,7 +11,7 @@ on:
   # GitHub cron is UTC. 05:00 UTC is 07:00 in Sweden during summer time.
   # Run daily at 07:07 Europe/Stockholm.
   schedule:
-    - cron: "7 7 * * *"
+    - cron: "12 7 * * *"
       timezone: "Europe/Stockholm"
 
 jobs:
