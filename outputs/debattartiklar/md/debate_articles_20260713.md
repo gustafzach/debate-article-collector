@@ -4,13 +4,13 @@
 
 **Täckningsperiod:** 2026-07-12 17:55 till 2026-07-14 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-13 09:49 Europe/Stockholm
+**Genererad:** 2026-07-13 10:30 Europe/Stockholm
 
 ## Översikt
 
-- **Artiklar:** 9
-- **Publikationer:** 5
-- **Publiceringsspann:** 2026-07-12 19:38 till 2026-07-13 08:23
+- **Artiklar:** 10
+- **Publikationer:** 6
+- **Publiceringsspann:** 2026-07-12 19:38 till 2026-07-13 10:00
 
 ## Antal per publikation
 
@@ -18,6 +18,7 @@
 |---|---:|
 | DN Debatt | 2 |
 | Expressen Debatt | 2 |
+| Aftonbladet Debatt | 1 |
 | SvD Debatt | 1 |
 | Di Debatt | 2 |
 | GP Debatt | 2 |
@@ -28,6 +29,7 @@
 
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
+| 10:00 | Aftonbladet Debatt | [Sluta bidra till Israels olagliga bosättningar](https://www.aftonbladet.se/debatt/a/xr5X6R/sluta-bidra-till-israels-olagliga-bosattningar) | Naomi Chazan, Former MK; former Deputy Speaker of the Knesset; Professor of Political Science; Prof Itzhak Galnoor, Professor of Political Science; former head... |
 | 08:00 | Di Debatt | [S: Ändra Sveriges position om kortare betaltider](https://www.di.se/debatt/s-andra-sveriges-position-om-kortare-betaltider/) | Mikael Damberg, ekonomisk-politisk talesperson (S) Fredrik Olovsson, närings- och energipolitisk talesperson (S); Fredrik Olovsson |
 | 08:00 | Di Debatt | [Rikspolischefen: Nya mått krävs för dagens polisarbete](https://www.di.se/debatt/rikspolischefen-nya-matt-kravs-for-dagens-polisarbete/) | Petra Lundh |
 | 05:00 | GP Debatt | [Väljarna säger nej till jakt på hotade arter – politiken säger ja](https://www.gp.se/debatt/valjarna-sager-nej-till-jakt-pa-hotade-arter-politiken-sager-ja.881c2849-c47f-498e-8fbc-5c043dc9dabf) | Misha Istratov, ordförande insamlingsstiftelsen Artkrisen |
@@ -90,6 +92,18 @@
 **Författare/avsändare:** Daniel Helldén; Linus Lakso (MP), trafikpolitisk talesperson
 
 **Länk:** <https://www.expressen.se/debatt/debatt-om-kriget-kommer-ska-tagen-ga-i-tid/>
+
+### Aftonbladet Debatt
+
+#### [Sluta bidra till Israels olagliga bosättningar](https://www.aftonbladet.se/debatt/a/xr5X6R/sluta-bidra-till-israels-olagliga-bosattningar)
+
+**Publicerad:** 2026-07-13 10:00
+
+**Ingress:** Sluta bidra till Israels olagliga bosättningar
+
+**Författare/avsändare:** Naomi Chazan, Former MK; former Deputy Speaker of the Knesset; Professor of Political Science; Prof Itzhak Galnoor, Professor of Political Science; former head of Civil Service; Dr Alon Liel, former Director-General of the Ministry of Foreign Affairs; former Ambassador to South Africa and Turkey
+
+**Länk:** <https://www.aftonbladet.se/debatt/a/xr5X6R/sluta-bidra-till-israels-olagliga-bosattningar>
 
 ### SvD Debatt
 
