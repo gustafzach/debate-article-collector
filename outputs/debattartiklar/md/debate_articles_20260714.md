@@ -4,7 +4,7 @@
 
 **Täckningsperiod:** 2026-07-13 17:55 till 2026-07-15 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-14 08:37 Europe/Stockholm
+**Genererad:** 2026-07-14 09:22 Europe/Stockholm
 
 ## Översikt
 
@@ -31,7 +31,7 @@
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
 | 08:15 | SvD Debatt | [Carl Johan Sonesson: SAS storsatsning gynnar hela Sverige](https://www.svd.se/a/e7O0xg/carl-johan-sonesson-sas-storsatsning-gynnar-hela-sverige) | Carl Johan Sonesson, ordförande i Greater Copenhagen |
-| 08:00 | Di Debatt | [Elisabeth Thand Ringqvist om Sveriges tillväxt](https://www.di.se/debatt/replik-sverige-kan-mer-och-ska-vara-det-sjalvklara-valet/) | Elisabeth Thand Ringqvist, partiledare Centerpartiet |
+| 08:00 | Di Debatt | [Elisabeth Thand Ringqvist om Sveriges tillväxt](https://www.di.se/debatt/replik-sverige-kan-mer-och-ska-vara-det-sjalvklara-valet/) | Elisabeth Thand Ringqvist, partiledare Centerpartiet; Enligt Jennie Brobeck, men inte i form av färdiga mallar, utan snarare handlar det om att ta till vara på... |
 | 07:16 | GP Debatt | [Att inte ställa samma krav på oss invandrare är rasistiskt](https://www.gp.se/debatt/att-inte-stalla-samma-krav-pa-oss-invandrare-ar-rasistiskt.0827c5b0-8f01-46f4-9f6c-267026f1967e) | Mosa M Sebdani, systemutvecklare och debattör |
 | 06:30 | Aftonbladet Debatt | [Vilka åtgärder planerar våra politiska partier?](https://www.aftonbladet.se/debatt/a/43WG4V/stigande-priser-i-host-vilka-atgarder-planerar-vara-politiska-partier) | undertecknaren |
 | 05:30 | Sydsvenskan Debatt | [SD: ”Akademisk frihet innebär inte frihet från ansvar.”](https://www.sydsvenskan.se/opinion/sd-akademisk-frihet-innebar-inte-frihet-fran-ansvar/) | Patrick Reslow (SD), skolpolitisk talesperson |
@@ -125,7 +125,7 @@
 
 **Ingress:** Elisabeth Thand Ringqvist diskuterar Sveriges framtid och vikten av långsiktiga investeringar för att stärka tillväxt och innovation i landet.
 
-**Författare/avsändare:** Elisabeth Thand Ringqvist, partiledare Centerpartiet
+**Författare/avsändare:** Elisabeth Thand Ringqvist, partiledare Centerpartiet; Enligt Jennie Brobeck, men inte i form av färdiga mallar, utan snarare handlar det om att ta till vara på den erfarenhet som redan finns i rummet; Gunnar Ekman, men inte i form av färdiga mallar, utan snarare handlar det om att ta till vara på den erfarenhet som redan finns i rummet
 
 **Länk:** <https://www.di.se/debatt/replik-sverige-kan-mer-och-ska-vara-det-sjalvklara-valet/>
 
