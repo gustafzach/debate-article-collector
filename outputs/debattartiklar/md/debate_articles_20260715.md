@@ -4,7 +4,7 @@
 
 **Täckningsperiod:** 2026-07-14 17:55 till 2026-07-16 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-15 07:12 Europe/Stockholm
+**Genererad:** 2026-07-15 09:26 Europe/Stockholm
 
 ## Översikt
 
@@ -31,9 +31,9 @@
 | Tidpunkt | Publikation | Artikel | Författare/avsändare |
 |---|---|---|---|
 | 06:45 | Di Debatt | [Ny EU-fond hjälper företag växa](https://www.di.se/debatt/ny-eu-fond-hjalper-foretag-vaxa/) | Ekaterina Zaharieva, EU kommissionär med ansvar för startupföretag, forskning och innovation Kasim Kutay, VD för Novo Holdings; Kasim Kutay; Aurore Martignoni;... |
+| 06:00 | Expressen Debatt | [DEBATT: Fallet i Nybro är en väckarklocka](https://www.expressen.se/debatt/debatt-fallet-i-nybro-ar-en-vackarklocka/) | Jessica Stegrud, socialpolitisk talesperson för Sverigedemokraterna |
 | 05:30 | Sydsvenskan Debatt | [”Malmö ska bli Sveriges idrottsstad.”](https://www.sydsvenskan.se/opinion/malmo-ska-bli-sveriges-idrottsstad/) | Patrick Sackner |
 | 05:00 | GP Debatt | [Starkare grundlag inte tillräckligt när regeringen försvagar rättssäkerheten](https://www.gp.se/debatt/starkare-grundlag-inte-tillrackligt-nar-regeringen-forsvagar-rattssakerheten.8a3f935c-8331-4228-8e61-56f143f15f40) | Peter Hellman, ordförande, advokat; Stellan Gärde, vice ordförande, jurist; Olle Jansson, vice ordförande, advokat; Maria Nilsson, vice ordförande, jurist; Lar... |
-| 01:21 | Expressen Debatt | [DEBATT: Fallet i Nybro är en väckarklocka](https://www.expressen.se/debatt/debatt-fallet-i-nybro-ar-en-vackarklocka/) | Jessica Stegrud |
 | 14/07 20:00 | DN Debatt | [”Kristersson tillsätter färre av sina egna än Löfven gjorde”](https://www.dn.se/debatt/kristersson-tillsatter-farre-av-sina-egna-an-lofven-gjorde/) | Adam Danieli |
 | 14/07 19:45 | SvD Debatt | [Isac Riddarsparre: Ge fler tillgång till obesitas­läkemedel](https://www.svd.se/a/q6Qrrm/isac-riddarsparre-ge-fler-tillgang-till-obesitaslakemedel) | Isac Riddarsparre |
 | 14/07 18:00 | Aftonbladet Debatt | [Nej, byggsubventioner löser inte bostadskrisen](https://www.aftonbladet.se/debatt/a/e7OwyM/kladsamt-om-damberg-sanker-tonen-en-aning) | Josefin Blid, ordförande Liberala Studenter i Stockholm |
@@ -62,11 +62,11 @@
 
 #### [DEBATT: Fallet i Nybro är en väckarklocka](https://www.expressen.se/debatt/debatt-fallet-i-nybro-ar-en-vackarklocka/)
 
-**Publicerad:** 2026-07-15 01:21
+**Publicerad:** 2026-07-15 06:00
 
-**Ingress:** Alltför länge har äldreomsorgen i Sverige fått fungera som ett integrationsverktyg. Fallet med den dementa mannen i Nybro, som nu avlidit, visar varför det behövs en haverikommission. Det är dags att våra äldre äntligen får den trygghet och respekt de förtjänar, skriver Jessica Stegrud (SD).
+**Ingress:** Alltför länge har äldreomsorgen i Sverige fått fungera som ett integrationsverktyg. Fallet med den dementa mannen i Nybro, som nu avlidit, visar varför det behövs en haverikommission. Det är dags att våra äldre äntligen får den trygghet och respekt de förtjänar, skriver Jessica Stegrud (SD). Jessica Stegrud är socialpolitisk talesperson för Sverigedemokraterna.
 
-**Författare/avsändare:** Jessica Stegrud
+**Författare/avsändare:** Jessica Stegrud, socialpolitisk talesperson för Sverigedemokraterna
 
 **Länk:** <https://www.expressen.se/debatt/debatt-fallet-i-nybro-ar-en-vackarklocka/>
 
