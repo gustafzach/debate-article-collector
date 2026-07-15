@@ -4,7 +4,7 @@
 
 **Täckningsperiod:** 2026-07-14 17:55 till 2026-07-16 00:00 Europe/Stockholm
 
-**Genererad:** 2026-07-15 06:59 Europe/Stockholm
+**Genererad:** 2026-07-15 07:12 Europe/Stockholm
 
 ## Översikt
 
