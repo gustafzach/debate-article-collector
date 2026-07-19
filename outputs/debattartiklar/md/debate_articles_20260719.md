@@ -1,0 +1,114 @@
+![Debattöversikt](../../../assets/banner.png)
+
+# Debattöversikt: 19 juli 2026
+
+**Täckningsperiod:** 2026-07-18 17:55 till 2026-07-20 00:00 Europe/Stockholm
+
+**Genererad:** 2026-07-19 09:37 Europe/Stockholm
+
+## Översikt
+
+- **Artiklar:** 6
+- **Publikationer:** 5
+- **Publiceringsspann:** 2026-07-18 19:45 till 2026-07-19 06:30
+
+## Antal per publikation
+
+| Publikation | Artiklar |
+|---|---:|
+| DN Debatt | 1 |
+| Aftonbladet Debatt | 1 |
+| SvD Debatt | 1 |
+| GP Debatt | 2 |
+| Sydsvenskan Debatt | 1 |
+
+## Läsordning
+
+### Nya debattartiklar
+
+| Tidpunkt | Publikation | Artikel | Författare/avsändare |
+|---|---|---|---|
+| 06:30 | Aftonbladet Debatt | [Ni måste ge ett samlat besked om a-kassan](https://www.aftonbladet.se/debatt/a/7pBaLw/tobias-baudin-s-ni-maste-ge-ett-samlat-besked-om-a-kassan) | Tobias Baudin |
+| 06:05 | Sydsvenskan Debatt | [”Debatten handlar om mer än vargen.”](https://www.sydsvenskan.se/opinion/debatten-handlar-om-mer-an-vargen/) | företrädare för lantbrukare och markägare |
+| 05:00 | GP Debatt | [Att rösta i riksdagsvalet är som att rösta ut sig själv](https://www.gp.se/debatt/att-rosta-i-riksdagsvalet-ar-som-att-rosta-ut-sig-sjalv.19863461-2527-4808-83c0-d691a15b8c72) | Anders Bartonek, docent i filosofi vid Södertörns högskola |
+| 04:55 | GP Debatt | [Vårdföretagarna visar hur toxiskt vinster i välfärden är](https://www.gp.se/debatt/vardforetagarna-visar-hur-toxiskt-vinster-i-valfarden-ar.3382a77f-e5d9-4a96-8126-d068a3f7eabd) | Malin Ragnegård, ordförande Kommunal |
+| 18/07 20:00 | DN Debatt | [”Kommunerna kan inte bära risken själva – staten måste in”](https://www.dn.se/debatt/kommunerna-kan-inte-bara-risken-sjalva-staten-maste-in/) | Johan Abrahamsson (M), kommunstyrelsens ordförande Mariestads kommun; Ahmed Alaeddine, chef för Business Region Värmland; Kristina Alvendal, nationell industri... |
+| 18/07 19:45 | SvD Debatt | [Amoc – en klimatrisk Sverige inte kan bortse från, skriver Broadgate och Rockström](https://www.svd.se/a/vrxJlL/amoc-en-klimatrisk-sverige-inte-kan-bortse-fran-skriver-broadgate-och-rockstrom) | Wendy Broadgate, doktor i marinkemi, direktör för det globala forskar­nätverket Future Earth Johan Rockström professor i jordsystem­vetenskap, direktör Potsdam... |
+
+### Repliker och slutrepliker
+
+| Tidpunkt | Publikation | Artikel | Författare/avsändare |
+|---|---|---|---|
+| - | - | Inga artiklar | - |
+
+## Artiklar
+
+### DN Debatt
+
+#### [”Kommunerna kan inte bära risken själva – staten måste in”](https://www.dn.se/debatt/kommunerna-kan-inte-bara-risken-sjalva-staten-maste-in/)
+
+**Publicerad:** 2026-07-18 20:00
+
+**Ingress:** DN Debatt. Nog nu, skriver Accelerationskontoret tillsammans med 27 representanter från landets kommuner, branschorganisationer och myndigheter.
+
+**Författare/avsändare:** Johan Abrahamsson (M), kommunstyrelsens ordförande Mariestads kommun; Ahmed Alaeddine, chef för Business Region Värmland; Kristina Alvendal, nationell industrisamordnare och chef för Accelerationskontoret; Jonas Bergström (S), kommunstyrelsens ordförande Härnösands kommun; Lorents Burman (S), kommunstyrelsens ordförande Skellefteå kommun; Stefan Dalin (S), kommunstyrelsens ordförande Timrå kommun; Jaani Heinonen, chef för investeringsfrämjandet Business Sweden; Björn Hellman, vd Livsmedelsföretagen; Anders Henriksson (S), ordförande SKR – Sveriges Kommuner och Regioner; Per Hidesten, vd Industriarbetsgivarna; Madelaine Jakobsson (C), kommunstyrelsens ordförande Nordmalings kommun; John Johansson (S), kommunstyrelsens ordförande Örebro kommun; Jenny Jänkänpää (MP), vice ordförande i kommunstyrelsen Gällivare kommun; Peter Kärnström (S), kommunstyrelsens ordförande Sandvikens Kommun; Birgitta Larsson (S), kommunstyrelsens ordförande Gällivare kommun; Ulrika Lindstrand, förbundsordförande,Sveriges ingenjörer; Erik Lövgren (S), kommunstyrelsens ordförande Ånge kommun; Marie Nilsson, förbundsordförande IF Metall; Johannes Nordin (M), 1:e vice ordförande Örnsköldsviks kommun; Leif Pettersson (S), kommunstyrelsens ordförande Ludvika kommun; Annika Roos, vd Jernkontoret; Carina Sammeli (S), kommunstyrelsens ordförande Luleå kommun; Leif Sandberg (C), vice ordförande SKR – Sveriges Kommuner och Regioner; Pia Sandvik, vd Teknikföretagen; Maria Sunér, vd Svemin; Malin Svanholm (S), kommunstyrelsens ordförande Kramfors kommun; Emma Swahn Nilsson (M), kommunstyrelsens ordförande Karlskronas kommun; Niklas Säwén (S), kommunstyrelsens ordförande Sundsvalls kommun; Jakob Tellgren, vd IKEM – Innovations- och kemiindustrierna i Sverige; Carina Wutzler (M), vice ordförande SKR – Sveriges Kommuner och Regioner; Béatrice Öman (S), kommunstyrelsens ordförande Bodens kommun
+
+**Länk:** <https://www.dn.se/debatt/kommunerna-kan-inte-bara-risken-sjalva-staten-maste-in/>
+
+### Aftonbladet Debatt
+
+#### [Ni måste ge ett samlat besked om a-kassan](https://www.aftonbladet.se/debatt/a/7pBaLw/tobias-baudin-s-ni-maste-ge-ett-samlat-besked-om-a-kassan)
+
+**Publicerad:** 2026-07-19 06:30
+
+**Ingress:** Inför valet den 13 september har Jimmie Åkesson ställt ut en rad löften till svenska folket. Ett av dem är att a- kassan inte kommer att försämras under SD:s va
+
+**Författare/avsändare:** Tobias Baudin
+
+**Länk:** <https://www.aftonbladet.se/debatt/a/7pBaLw/tobias-baudin-s-ni-maste-ge-ett-samlat-besked-om-a-kassan>
+
+### SvD Debatt
+
+#### [Amoc – en klimatrisk Sverige inte kan bortse från, skriver Broadgate och Rockström](https://www.svd.se/a/vrxJlL/amoc-en-klimatrisk-sverige-inte-kan-bortse-fran-skriver-broadgate-och-rockstrom)
+
+**Publicerad:** 2026-07-18 19:45
+
+**Ingress:** DEBATT. Sverige bör betrakta en drastisk inbromsning eller till och med kollaps för havsström­systemet Amoc som en strategisk risk som kräver uppmärksamhet och åtgärder redan i dag. Det skriver Wendy Broadgate och Johan Rockström.
+
+**Författare/avsändare:** Wendy Broadgate, doktor i marinkemi, direktör för det globala forskar­nätverket Future Earth Johan Rockström professor i jordsystem­vetenskap, direktör Potsdam­institutet för klimat­forskning; Johan Rockström
+
+**Länk:** <https://www.svd.se/a/vrxJlL/amoc-en-klimatrisk-sverige-inte-kan-bortse-fran-skriver-broadgate-och-rockstrom>
+
+### GP Debatt
+
+#### [Att rösta i riksdagsvalet är som att rösta ut sig själv](https://www.gp.se/debatt/att-rosta-i-riksdagsvalet-ar-som-att-rosta-ut-sig-sjalv.19863461-2527-4808-83c0-d691a15b8c72)
+
+**Publicerad:** 2026-07-19 05:00
+
+**Ingress:** Snart är det val. Därför uppbådar de politiska partierna all sin kraft för att få väljarnas uppmärksamhet och vinna fördelar i olika debatter och sakfrågor. Men trots denna energiska teater bygger det politiska valet på ett sken om demokrati och folkligt självbestämmande. Det parlamentariska handlingsutrymmet är mycket begränsat och kan till exempel inte ändra på de stora inkomstskillnader som existerar i Sverige. Så varför röstar så många ändå? skriver Anders Bartonek.
+
+**Författare/avsändare:** Anders Bartonek, docent i filosofi vid Södertörns högskola
+
+**Länk:** <https://www.gp.se/debatt/att-rosta-i-riksdagsvalet-ar-som-att-rosta-ut-sig-sjalv.19863461-2527-4808-83c0-d691a15b8c72>
+
+#### [Vårdföretagarna visar hur toxiskt vinster i välfärden är](https://www.gp.se/debatt/vardforetagarna-visar-hur-toxiskt-vinster-i-valfarden-ar.3382a77f-e5d9-4a96-8126-d068a3f7eabd)
+
+**Publicerad:** 2026-07-19 04:55
+
+**Ingress:** Vårdbolagen och deras paraplyorganisation Vårdföretagarna fokuserar på att maximera vinsten i stället för att stå upp för ingångna avtal. Genom att ”erbjuda” de anställda dubbla anställningar menar Vårdföretagarna nu att de som arbetar deltid inte har rätt till övertidsersättning. Men i vilka andra yrken skulle man tvinga in personer i dubbla anställningar? skriver Malin Ragnegård.
+
+**Författare/avsändare:** Malin Ragnegård, ordförande Kommunal
+
+**Länk:** <https://www.gp.se/debatt/vardforetagarna-visar-hur-toxiskt-vinster-i-valfarden-ar.3382a77f-e5d9-4a96-8126-d068a3f7eabd>
+
+### Sydsvenskan Debatt
+
+#### [”Debatten handlar om mer än vargen.”](https://www.sydsvenskan.se/opinion/debatten-handlar-om-mer-an-vargen/)
+
+**Publicerad:** 2026-07-19 06:05
+
+**Ingress:** Frågan är hur Sverige skapar långsiktiga förutsättningar för att det ska finnas betesdjur i hela landet, skriver företrädare för lantbrukare och markägare.
+
+**Författare/avsändare:** företrädare för lantbrukare och markägare
+
+**Länk:** <https://www.sydsvenskan.se/opinion/debatten-handlar-om-mer-an-vargen/>
